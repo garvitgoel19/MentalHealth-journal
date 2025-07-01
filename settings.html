@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings | My Journal Budy</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="settings.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-container">
+    <header class="navbar">
+      <div class="logo">📝 My Journal Budy</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="journal.html">Journal</a>
+        <a href="mood.html">Mood Tracker</a>
+        <a href="affirmations.html">Affirmations</a>
+        <a href="settings.html" class="active">Settings</a>
+      </nav>
+    </header>
+
+    <main class="settings-page">
+      <h1>⚙️ Settings</h1>
+
+      <div class="setting-option">
+        <label for="themeToggle">🌗 Toggle Light/Dark Mode</label>
+        <input type="checkbox" id="themeToggle" />
+      </div>
+
+      <div class="setting-option">
+        <label for="themeColor">🎨 Select Theme (Coming Soon)</label>
+        <select id="themeColor" disabled>
+          <option>Default</option>
+          <option>Lavender</option>
+          <option>Sky Blue</option>
+          <option>Sunset</option>
+        </select>
+      </div>
+
+      <div class="setting-option">
+        <button class="btn-danger" id="clearDataBtn">🗑️ Clear All Saved Data</button>
+      </div>
+
+      <div class="setting-note">
+        <p><strong>Note:</strong> Clearing data will reset your journal, mood, and affirmations history from this device.</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Journal Budy. Made with 💜</p>
+    </footer>
+  </div>
+</body>
+</html>

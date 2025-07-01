@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Journal Budy | Journal</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="journal.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-container">
+    <header class="navbar">
+      <div class="logo">📝 My Journal Budy</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="journal.html" class="active">Journal</a>
+        <a href="mood.html">Mood Tracker</a>
+        <a href="affirmations.html">Affirmations</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </header>
+
+    <main class="journal-page">
+      <section class="hero-banner">
+        <h1>Write to Heal</h1>
+        <p>Your thoughts matter. Let it all out here 💭</p>
+      </section>
+
+      <section class="entry-input">
+        <textarea id="journalText" placeholder="What's on your mind today?"></textarea>
+        <button class="btn-primary" id="saveEntry">Save Entry</button>
+      </section>
+
+      <section class="entries-section" id="entriesContainer">
+        <!-- Entries will appear here -->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Journal Budy. Made with 💜</p>
+    </footer>
+  </div>
+</body>
+</html>

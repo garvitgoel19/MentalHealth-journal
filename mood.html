@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Journal Budy | Mood Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="mood.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="page-container">
+    <header class="navbar">
+      <div class="logo">📝 My Journal Budy</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="journal.html">Journal</a>
+        <a href="mood.html" class="active">Mood Tracker</a>
+        <a href="affirmations.html">Affirmations</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </header>
+
+    <main class="mood-page">
+      <section class="hero-banner">
+        <h1>How are you feeling today?</h1>
+        <p>Select your mood and track your emotional journey 😊</p>
+      </section>
+
+
+      <section class="mood-input">
+        <div class="emoji-options">
+          <span class="emoji" data-mood="Happy">😊</span>
+          <span class="emoji" data-mood="Sad">😢</span>
+          <span class="emoji" data-mood="Angry">😠</span>
+          <span class="emoji" data-mood="Calm">😌</span>
+          <span class="emoji" data-mood="Excited">🤩</span>
+        </div>
+        <button class="btn-primary" id="saveMood">Save Mood</button>
+      </section>
+
+      <section class="mood-history" id="moodHistoryContainer">
+        <!-- Mood entries appear here -->
+      </section>
+            <section class="mood-quote">
+  <h2>🌟 Quote of the Day</h2>
+  <blockquote id="dailyQuote">
+    “Your present circumstances don’t determine where you go; they merely determine where you start.”
+  </blockquote>
+</section>
+
+<section class="mood-chart">
+  <h2>Your Mood Overview</h2>
+  <canvas id="moodChart" width="400" height="200"></canvas>
+</section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Journal Budy. Made with 💜</p>
+    </footer>
+  </div>
+</body>
+</html>
