@@ -15,7 +15,7 @@
 ## Usage
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/my-journal-budy.git
+   git clone [https://github.com/your-username/my-journal-budy](https://github.com/garvitgoel19/MentalHealth-journal).git
    cd my-journal-budy
 
 
